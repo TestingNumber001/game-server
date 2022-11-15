@@ -1,15 +1,36 @@
 {
+  "name": "game-server",
+  "version": "1.0.0",
+  "main": "build/index.bundle.js",
+  "repository": "https://github.com/TestingNumber001/game-server.git",
+  "author": "TestingNumber001 <ewqasd123qwe001@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "npm-run-all -p dev:*",
+    "dev:start": "ts-node ./scripts/dev.start.ts",
+    "dev:build": "ts-node ./scripts/dev.build.ts"
+  },
   "devDependencies": {
     "@babel/core": "^7.20.2",
     "@babel/preset-react": "^7.18.6",
     "@babel/preset-typescript": "^7.18.6",
+    "@types/express": "^4.17.14",
+    "@types/nodemon": "^1.19.2",
     "babel-loader": "^9.1.0",
     "express": "^4.18.2",
+    "nodemon": "^2.0.20",
+    "npm-run-all": "^4.1.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "ts-node": "^10.9.1",
     "typescript": "^4.8.4",
     "webpack": "^5.75.0",
     "webpack-cli": "^4.10.0"
+  },
+  "dependencies": {
+    "@types/react": "^18.0.25",
+    "@types/react-dom": "^18.0.9",
+    "@types/react-router-dom": "^5.3.3",
+    "react-router-dom": "^6.4.3"
   }
 }
